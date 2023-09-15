@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracking System - Project Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="project.js"></script>
+    <script src="date.js"></script>
+
+     <!-- Favicons -->
+  <link href="Resources/favicon/favicon.ico" rel="icon">
+  
+</head>
+<body>
+    <header>
+        <h1>Welcome, Project Manager</h1>
+        <div id="user-info">
+            <p>Email: projectmanager@example.com</p>
+            <p>Role: Project Manager</p>
+        </div>
+
+        <div class="loginTime">
+            <p>Logged-in info: <div id="date-time">
+                <p id="current-date">date</p>
+            </div></p>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#" id="create-project">Create New Project</a>
+    </nav>
+    <main>
+        <section id="project-list">
+            <h2>Your Projects</h2>
+            <ul id="projects">
+                <!-- Project items will be added here dynamically -->
+            </ul>
+        </section>
+        <section id="project-details">
+            <!-- Project details will be displayed here when a project is clicked -->
+        </section>
+        <section id="bug-details" class="container-table">
+            <!-- Bug details will be displayed here when a bug is selected -->
+        </section>
+    </main>
+</body>
+</html>
