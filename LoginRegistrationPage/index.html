@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">LOGIN</h2>
+
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="password" />
+            </div>
+             <!-- Forgot password isn't req <a href="#"  class="href">Forgot password</a> -->
+
+            <input type="submit" value="Login" class="btn solid" />
+           
+          </form>
+
+          <!-- Registration form starts here -->
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Registration</h2>
+            <!-- <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div> -->
+                      <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <!-- This drop down needs to be added as per the req in word file but styling needs to changed -->
+            <div class="input-field">
+              <i class="fas fa-chevron-down"></i> <!-- Font Awesome icon for the dropdown -->
+              <select id="role" name="role">
+                <option value="" disabled selected>Please select your role</option>
+                <option value="manager">Product Manager</option> 
+                <option value="developer">Software Developer</option>
+                <option value="tester">Tester</option>
+              </select>
+            </div>
+          
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <!-- Confirm password -->
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm password" />
+            </div>
+              
+            <!-- <div>
+              <input type="checkbox"/><a href="#" class="href"> <span class="rules-text">"Alıcı müqaviləsi"</a></span> nin şərtləri ilə razıyam
+            </div> -->
+
+            <input type="submit" class="btn" value="Register"/>
+            
+
+          </form>
+        </div>
+      </div>
+
+      <!-- Left Panel Starts -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+           
+
+          <div class="content">
+            <h3>Don't have an account?</h3>
+            <p>
+           Click on the Register button to register for a new account
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Register 
+            </button>
+          </div>
+          <img src="img/register.svg" class="image" alt="Register" />
+        </div>
+
+        <!-- Right Panel Starts -->
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Have an existing already?</h3>
+            <p>
+                Click on the login button to login into your account.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Log In
+            </button>
+          </div>
+          <img src="img/login.svg" class="image" alt="Login" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
